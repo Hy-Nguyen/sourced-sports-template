@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="mona-sans min-w-[100dvh] max-w-[100dvw] overflow-x-hidden text-white">
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>

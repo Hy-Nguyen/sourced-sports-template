@@ -67,3 +67,49 @@
     @apply bg-background text-foreground;
   }
 }
+
+.hero-blur {
+  position: absolute;
+  width: 414px;
+  height: 414px;
+  left: 80%;
+  top: 30%;
+
+  background: #8244dc;
+  filter: blur(225px);
+  border-radius: 500px;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('../public/font/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('../public/font/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+html {
+  font-family: 'Mona Sans';
+}
+
+.mona-sans {
+  font-family: 'Mona Sans';
+}
+
+.hero-section {
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+  background-color: #110a22;
+}
+
+.about-us-blur {
+  /* Rectangle 776 */
+
+  position: absolute;
+  width: 414px;
+  height: 414px;
+
+  background: rgba(51, 51, 51, 0.4);
+  filter: blur(225px);
+  border-radius: 500px;
+}
