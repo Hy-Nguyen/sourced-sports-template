@@ -13,7 +13,7 @@ export const cards = [
   {
     icon: <BestPrice backdrop={false} />,
     label: 'Lowest Fees Guaranteed',
-    text: 'Discover the industry&apos;s lowest fees at Sourced Tickets, where saving you money is our top priority.',
+    text: "Discover the industry's lowest fees at Sourced Tickets, where saving you money is our top priority.",
   },
   {
     icon: <Secure />,

@@ -1,3 +1,6 @@
+import { ChevronRight } from 'lucide-react';
+import { useState } from 'react';
+
 export default function EventItem({
   label,
   img,
@@ -9,8 +12,13 @@ export default function EventItem({
   index: number;
   category: string;
 }) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="group relative flex w-full flex-row items-center justify-between gap-10 border-b border-white/10 px-6 py-10">
+    <div
+      className="group relative flex w-full flex-row items-center justify-between gap-10 border-b-2 border-white/10 px-6 py-10 transition-colors duration-300 hover:border-highlight-2"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div className="absolute left-0 top-0 h-full w-full">
         <img
           src={img}
@@ -29,8 +37,17 @@ export default function EventItem({
           {label}
         </h1>
       </article>
-      <a href="#" className="z-10 text-[#F6F6F6AB]">
-        Visit
+      <a href="#" className="z-10 text-[#F6F6F6AB] group-hover:text-white relative">
+        <span
+          className={`absolute transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
+        >
+          Visit
+        </span>
+        <span
+          className={`absolute transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <ChevronRight />
+        </span>
       </a>
     </div>
   );
