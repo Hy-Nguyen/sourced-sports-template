@@ -98,7 +98,7 @@ html {
 }
 
 .hero-section {
-  clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   background-color: #110a22;
 }
 
@@ -112,4 +112,8 @@ html {
   background: rgba(51, 51, 51, 0.4);
   filter: blur(225px);
   border-radius: 500px;
+}
+
+.features-clip {
+  clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
 }
