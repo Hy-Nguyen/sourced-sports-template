@@ -76,7 +76,7 @@
   top: 30%;
 
   background: #8244dc;
-  filter: blur(225px);
+  filter: blur(450px);
   border-radius: 500px;
 }
 
@@ -110,7 +110,7 @@ html {
   height: 414px;
 
   background: rgba(51, 51, 51, 0.4);
-  filter: blur(225px);
+  filter: blur(450px);
   border-radius: 500px;
 }
 
@@ -126,6 +126,6 @@ html {
   top: 40%;
 
   background: rgba(255, 255, 255, 0.15);
-  filter: blur(225px);
+  filter: blur(450px);
   border-radius: 100%;
 }

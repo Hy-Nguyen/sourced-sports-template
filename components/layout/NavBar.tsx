@@ -32,7 +32,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="fixed left-0 top-0 z-10 w-screen max-w-[100dvw] overflow-hidden border-b border-white/30 bg-main pb-4 text-[12px] font-semibold text-white">
+    <nav className="fixed left-0 top-0 z-50 w-screen max-w-[100dvw] overflow-hidden border-b border-white/30 bg-main pb-4 text-[12px] font-semibold text-white">
       {/* nav container */}
       <div className="container flex items-center justify-between">
         <SourcedLogo />
@@ -52,7 +52,7 @@ export default function NavBar() {
                     initial={{ opacity: 0, width: 0 }}
                     animate={{ opacity: 1, width: '100%' }}
                     exit={{ opacity: 0, width: 0 }}
-                    className="bg-highlight absolute bottom-0 left-0 h-[2px] w-full"
+                    className="absolute bottom-0 left-0 h-[2px] w-full bg-highlight"
                   />
                 )}
               </AnimatePresence>
@@ -64,9 +64,9 @@ export default function NavBar() {
           <SeachIcon />
           <button className="group relative">
             Login
-            <div className="bg-highlight absolute left-0 top-full h-[2px] w-full opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="absolute left-0 top-full h-[2px] w-full bg-highlight opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
           </button>
-          <button className="bg-highlight w-fit rounded-md px-4 py-2">Join Now</button>
+          <button className="w-fit rounded-md bg-highlight px-4 py-2">Join Now</button>
         </div>
       </div>
     </nav>
