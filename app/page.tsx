@@ -1,9 +1,9 @@
 'use client';
 
 import AboutUsSection from '@/components/AboutUs/AboutUsSection';
+import EventSection from '@/components/Events/EventSection';
 import FeaturesSection from '@/components/Features/FeaturesSection';
 import HeroSection from '@/components/Hero/HeroSection';
-import SeachIcon from '@/public/svg/SeachIcon';
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <AboutUsSection />
       <div className="features-clip -mb-[0.5px] h-[100px] bg-main" aria-hidden />
       <FeaturesSection />
+      <EventSection />
     </div>
   );
 }

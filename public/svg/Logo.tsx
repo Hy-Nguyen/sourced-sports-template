@@ -18,8 +18,8 @@ export default function SourcedLogo() {
           <use xlinkHref="#image0_63_206" transform="scale(0.000244141)" />
         </pattern>
         <linearGradient id="paint0_linear_63_206" x1="51" y1="30" x2="124" y2="30" gradientUnits="userSpaceOnUse">
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" />
         </linearGradient>
         <image
           id="image0_63_206"

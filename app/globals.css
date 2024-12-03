@@ -117,3 +117,15 @@ html {
 .features-clip {
   clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
 }
+
+.features-blur {
+  position: absolute;
+  width: 414px;
+  height: 414px;
+  left: 80%;
+  top: 40%;
+
+  background: rgba(255, 255, 255, 0.15);
+  filter: blur(225px);
+  border-radius: 100%;
+}

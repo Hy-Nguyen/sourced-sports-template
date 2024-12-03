@@ -1,8 +1,12 @@
-export default function Inventory() {
+export default function Inventory({ backdrop = true }: { backdrop?: boolean }) {
   return (
     <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="55" height="55" rx="6" fill="url(#paint0_linear_0_1)" />
-      <rect x="0.5" y="0.5" width="54" height="54" rx="5.5" stroke="black" stroke-opacity="0.29" />
+      {backdrop && (
+        <>
+          <rect width="55" height="55" rx="6" fill="url(#paint0_linear_0_1)" />
+          <rect x="0.5" y="0.5" width="54" height="54" rx="5.5" stroke="black" strokeOpacity="0.29" />
+        </>
+      )}
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -15,8 +19,8 @@ export default function Inventory() {
       />
       <defs>
         <linearGradient id="paint0_linear_0_1" x1="0" y1="0" x2="55" y2="55" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#8244DC" />
-          <stop offset="1" stop-color="#462476" />
+          <stop stopColor="#8244DC" />
+          <stop offset="1" stopColor="#462476" />
         </linearGradient>
       </defs>
     </svg>
