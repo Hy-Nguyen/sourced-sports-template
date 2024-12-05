@@ -3,7 +3,7 @@ import Secure from '@/public/svg/AboutUs/Secure';
 import TrophyFilled from '@/public/svg/AboutUs/TrophyFilled';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
-import { FeatureCard } from '../AboutUs/AboutUsCards';
+import { FeatureCard } from '../WhyUs/AboutUsCards';
 export const cards = [
   {
     icon: <TrophyFilled size={64} />,
@@ -36,10 +36,7 @@ export default function FeaturesSection() {
 
   let transform = `translateX(-${currentCard * 25}%)`;
   return (
-    <section
-      id="features"
-      className="flex flex-col items-center justify-center overflow-visible bg-main py-24 text-white"
-    >
+    <section id="features" className="flex flex-col items-center justify-center overflow-clip bg-main py-24 text-white">
       <div className="container relative flex flex-col gap-4">
         <div className="features-blur" />
         <h2 className="text-[24px] font-light text-highlight-2">Features</h2>

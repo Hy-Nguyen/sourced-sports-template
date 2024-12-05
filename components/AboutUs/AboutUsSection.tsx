@@ -1,66 +1,77 @@
-import Inventory from '@/public/svg/AboutUs/Inventory';
-import SearchBar from './SearchBar';
-import AboutUsCards from './AboutUsCards';
-import VerifiedTickets from '@/public/svg/AboutUs/VerifiedTickets';
-import BestPrice from '@/public/svg/AboutUs/BestPrice';
-import HiddenFees from '@/public/svg/AboutUs/HiddenFees';
-import Trophy from '@/public/svg/AboutUs/Trophy';
+import { motion } from 'framer-motion';
 
-export const cards = [
-  {
-    icon: <VerifiedTickets />,
-    label: 'Verified Tickets',
-    text: 'Every ticket on Sourced Tickets is verified for authenticity, so you can buy',
-  },
-  {
-    icon: <BestPrice />,
-    label: 'Best Price Guarantee',
-    text: 'We offer competitive pricing to give you the best deal on concert and sports tickets.',
-  },
-  {
-    icon: <HiddenFees />,
-    label: 'No Hidden Fees',
-    text: 'The price you see is the price you pay—no surprises at checkout',
-  },
-  {
-    icon: <Inventory />,
-    label: 'Extensive Inventory',
-    text: 'Choose from a wide variety of events, from local concerts to major league sports games',
-  },
-  {
-    icon: <Trophy />,
-    label: 'Easy to Use',
-    text: 'Our website is designed to make finding and purchasing tickets simple and hassle-free.',
-  },
-];
 export default function AboutUsSection() {
   return (
-    <section
-      id="about-us"
-      className="relative flex min-h-[50dvh] w-full flex-col items-center justify-start bg-white py-24 text-black"
-    >
-      <SearchBar />
-      {/* About Us Body */}
-      <div className="container relative flex flex-col items-center justify-center gap-4">
-        <article className="flex flex-col items-center justify-center gap-4">
-          <h2 className="text-[24px] font-light leading-none text-highlight-2">Why Us</h2>
-          <h1 className="text-[48px] font-medium leading-none">Discover the difference</h1>
-          <p className="w-[60%] text-center font-semibold text-gray/60">
-            Find tickets for the hottest concerts and live events. Browse upcoming shows, select your seats, and secure
-            your spot at unforgettable performances. Stay tuned—more events are coming soon!
+    <div className="flex w-screen flex-col items-center justify-center pb-12">
+      <div className="container relative flex flex-col items-start justify-center gap-4 py-12">
+        <div className="about-us-blur" aria-hidden />
+        <div className="about-us-2-blur" aria-hidden />
+        <h1 className="text-[24px] font-light text-highlight-2">About Us</h1>
+        <h2 className="max-w-[70%] text-[48px] font-medium text-gray">
+          At Sourced Tickets, we know what it&apos;s like to be in your shoes
+        </h2>
+        <div className="flex w-full items-center justify-center">
+          <img src="/img/AboutUs.png" alt="About Us" />
+        </div>
+        <article className="flex flex-col items-center justify-center gap-10 text-[24px] font-normal text-gray/60">
+          <p>
+            Because we&apos;ve been there. As passionate fans of concerts, sports, and live entertainment, we&apos;ve
+            experienced the thrill of finding the perfect tickets and the frustration of hidden fees, complicated
+            processes, and unreliable platforms. That&apos;s why we set out to create something better.
+          </p>
+          <p>
+            Sourced Tickets was born from a simple idea: to build a marketplace that puts fans first. We believe
+            everyone deserves access to affordable, authentic tickets without the hassle. From the very beginning, our
+            mission has been clear—make it easy for you to experience more while spending less.
+          </p>
+          <p>
+            Every feature on our platform is designed with you in mind. Whether it&apos;s transparent pricing,
+            user-friendly navigation, or our commitment to verified tickets, we prioritize your peace of mind.
+            We&apos;re not just a ticket seller; we&apos;re your trusted partner in creating unforgettable memories
+          </p>
+          <p>
+            When you choose Sourced Tickets, you&apos;re choosing a team that truly cares. We&apos;re here to help you
+            find the best seats, save money, and enjoy every moment worry-free. Because at the end of the day, it&apos;s
+            not just about tickets—it&apos;s about the experiences that bring us together
           </p>
         </article>
-        <div className="flex w-full flex-wrap items-center justify-center gap-4">
-          {cards.map((card) => (
-            <AboutUsCards key={card.label} {...card} />
-          ))}
-        </div>
-        <button className="mt-6 rounded-lg bg-main px-8 py-2 font-medium text-white">Join Now</button>
-
-        {/* blur */}
-        <div className="about-us-blur bottom-0 right-0 z-0" />
-        <div className="about-us-blur left-0 top-0 z-0" />
       </div>
-    </section>
+      <div className="logo-fade flex h-full w-full rotate-[-3deg] select-none flex-col items-center space-x-[12px] overflow-x-hidden px-2 py-3 md:py-2">
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{
+            translateX: `calc(-25% - 16px)`,
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+          className="flex w-fit flex-nowrap gap-10 text-[64px] font-extrabold text-black *:whitespace-nowrap"
+        >
+          <span className="">Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+          <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+          <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+          <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+        </motion.div>
+        <motion.div
+          initial={{ x: 0 }}
+          animate={{
+            translateX: `calc(25% + 16px)`,
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
+          className="flex w-fit flex-nowrap gap-10 text-[64px] font-extrabold text-black *:whitespace-nowrap"
+        >
+          <span className="">Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+          <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+          <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+          <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
+        </motion.div>
+      </div>
+    </div>
   );
 }

@@ -1,7 +1,7 @@
 'use client';
 import { Toaster } from 'react-hot-toast';
 import NavBar from './NavBar';
-
+import Footer from './Footer';
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   return (
     <>
@@ -9,6 +9,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
         <Toaster />
         <NavBar />
         {children}
+        <Footer />
       </main>
     </>
   );
