@@ -77,10 +77,10 @@ export default function NavBar() {
           {isMenuOpen && (
             <motion.nav
               initial={{ opacity: 0, y: -100 }}
-              animate={{ opacity: 1, y: 60 }}
+              animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="absolute left-0 top-0 h-full min-h-screen w-full bg-main lg:hidden"
+              className="absolute left-0 top-[60px] z-50 h-full min-h-screen w-full border-t border-highlight-2 bg-main p-4 lg:hidden"
             >
               hello
             </motion.nav>
