@@ -80,7 +80,7 @@ export default function NavBar() {
               animate={{ opacity: 1, y: 60 }}
               exit={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.3, ease: 'easeInOut' }}
-              className="absolute left-0 top-0 h-screen w-screen bg-main lg:hidden"
+              className="absolute left-0 top-0 h-full min-h-screen w-full bg-main lg:hidden"
             >
               hello
             </motion.nav>

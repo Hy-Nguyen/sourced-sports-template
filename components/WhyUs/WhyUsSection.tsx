@@ -10,7 +10,7 @@ export const cards = [
   {
     icon: <VerifiedTickets />,
     label: 'Verified Tickets',
-    text: 'Every ticket on Sourced Tickets is verified for authenticity, so you can buy',
+    text: 'Every ticket on Sourced Tickets is verified for authenticity, so you can buy with confidence.',
   },
   {
     icon: <BestPrice />,
