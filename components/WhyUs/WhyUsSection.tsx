@@ -37,15 +37,19 @@ export default function WhyUsSection() {
   return (
     <section
       id="about-us"
-      className="relative flex min-h-[50dvh] w-full flex-col items-center justify-start bg-white py-24 text-black"
+      className="relative flex min-h-[50dvh] w-full flex-col items-center justify-start bg-white py-24 pb-0 text-black lg:pb-24"
     >
-      <SearchBar />
+      <div className="">
+        <SearchBar />
+      </div>
       {/* About Us Body */}
       <div className="container relative flex flex-col items-center justify-center gap-4">
         <article className="flex flex-col items-center justify-center gap-4">
-          <h2 className="text-[24px] font-light leading-none text-highlight-2">Why Us</h2>
-          <h1 className="text-[48px] font-medium leading-none">Discover the difference</h1>
-          <p className="w-[60%] text-center font-semibold text-gray/60">
+          <h2 className="text-[20px] font-light leading-none text-highlight-2 lg:text-[24px]">Why Us</h2>
+          <h1 className="text-center text-[30px] font-medium leading-none lg:text-left lg:text-[48px]">
+            Discover the difference
+          </h1>
+          <p className="text-center text-sm font-semibold text-gray/60 lg:w-[60%] lg:text-base">
             Find tickets for the hottest concerts and live events. Browse upcoming shows, select your seats, and secure
             your spot at unforgettable performances. Stay tuned—more events are coming soon!
           </p>

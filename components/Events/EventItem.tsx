@@ -33,19 +33,15 @@ export default function EventItem({
         <h2 className="text-[20px] font-normal text-[#F6F6F6AB] transition-colors duration-300 group-hover:text-highlight-2">
           {category.toUpperCase()} <span className="text-highlight-2">#{index + 1}</span>
         </h2>
-        <h1 className="text-[60px] font-normal transition-all duration-300 group-hover:translate-x-5 group-hover:font-bold group-hover:text-highlight-2">
+        <h1 className="text-[56px] font-normal transition-all duration-300 group-hover:translate-x-5 group-hover:font-bold group-hover:text-highlight-2">
           {label}
         </h1>
       </article>
-      <a href="#" className="z-10 text-[#F6F6F6AB] group-hover:text-white relative">
-        <span
-          className={`absolute transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`}
-        >
+      <a href="#" className="relative z-10 text-[#F6F6F6AB] group-hover:text-white">
+        <span className={`absolute transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
           Visit
         </span>
-        <span
-          className={`absolute transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}
-        >
+        <span className={`absolute transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
           <ChevronRight />
         </span>
       </a>
