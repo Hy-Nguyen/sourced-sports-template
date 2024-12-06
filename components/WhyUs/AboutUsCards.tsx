@@ -23,7 +23,7 @@ export function FeatureCard({ icon, label, text }: { icon: React.ReactNode; labe
       initial={{ background: 'linear-gradient(to bottom right, #110A1D, #110A1D)' }}
       whileHover={{ background: 'linear-gradient(to bottom right, #8244EB, #4A2685)' }}
       transition={{ duration: 0.5 }}
-      className="group z-[1] flex min-w-[555px] cursor-pointer flex-col gap-10 rounded-lg p-4 text-[#F3F3F3]"
+      className="group z-[1] flex min-w-full cursor-pointer flex-col gap-10 rounded-lg p-4 text-[#F3F3F3] lg:min-w-[555px]"
     >
       <div className="flex flex-row items-center justify-between gap-2">
         <h1 className="text-[28px] font-bold text-inherit transition-colors duration-300 ease-in-out">{label}</h1>

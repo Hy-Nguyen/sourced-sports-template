@@ -30,7 +30,7 @@ export default function ArtistView() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex w-full flex-col pb-24"
+      className="flex w-full flex-col lg:pb-24"
     >
       {artistItems.map((item, i) => (
         <EventItem key={item.label} index={i} category="artists" {...item} />

@@ -24,7 +24,7 @@ export default function EventSection() {
     }
   }
   return (
-    <section id="events" className="relative flex flex-col items-center justify-center bg-main text-white">
+    <section id="events" className="relative  flex flex-col items-center justify-center bg-main text-white">
       <div className="container flex flex-col items-center justify-center gap-4">
         <div className="events-blur absolute left-0 top-1/2" />
         <article id="event-header" className="flex flex-col items-center justify-center gap-2">

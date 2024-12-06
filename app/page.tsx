@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex max-w-[100dvw] flex-col bg-white">
       <HeroSection />
       <WhyUsSection />
-      <div className="features-clip -mb-[0.5px] h-[100px] bg-main" aria-hidden />
+      <div className="features-clip -mb-[0.7px] h-[100px] bg-main" aria-hidden />
       <EventSection />
       <FeaturesSection />
       <AboutUsSection />
