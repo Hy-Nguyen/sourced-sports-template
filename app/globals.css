@@ -93,7 +93,7 @@ html {
   font-family: 'Mona Sans';
   width: 100dvw;
   max-width: 100dvw;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 .mona-sans {
@@ -199,4 +199,25 @@ html {
   filter: blur(450px);
   border-radius: 500px;
   will-change: filter;
+}
+
+.search-hero {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.search-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../public/img/events/sports/basketball-min.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1; /* Ensure the pseudo-element is behind the text */
+  background-color: #110a22;
 }

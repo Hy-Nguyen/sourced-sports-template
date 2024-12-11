@@ -2,18 +2,18 @@ import { motion } from 'framer-motion';
 
 export default function AboutUsSection() {
   return (
-    <div className="flex w-screen flex-col items-center justify-center pb-12">
+    <section id="about-us" className="flex w-screen flex-col items-center justify-center pb-12">
       <div className="container relative flex flex-col items-start justify-center gap-4 py-12">
         <div className="about-us-blur" aria-hidden />
         <div className="about-us-2-blur" aria-hidden />
-        <h1 className="text-[24px] font-light text-highlight-2">About Us</h1>
-        <h2 className="max-w-[70%] text-[48px] font-medium text-gray">
+        <h1 className="text-[18px] font-light text-highlight-2 lg:text-[24px]">About Us</h1>
+        <h2 className="text-[32px] font-medium text-gray lg:max-w-[70%] lg:text-[48px]">
           At Sourced Tickets, we know what it&apos;s like to be in your shoes
         </h2>
         <div className="flex w-full items-center justify-center">
           <img src="/img/AboutUs.png" alt="About Us" />
         </div>
-        <article className="flex flex-col items-center justify-center gap-10 text-[24px] font-normal text-gray/60">
+        <article className="flex flex-col items-center justify-center gap-6 text-base font-normal text-gray/60 lg:gap-10 lg:text-[24px]">
           <p>
             Because we&apos;ve been there. As passionate fans of concerts, sports, and live entertainment, we&apos;ve
             experienced the thrill of finding the perfect tickets and the frustration of hidden fees, complicated
@@ -47,7 +47,7 @@ export default function AboutUsSection() {
             repeat: Infinity,
             ease: 'linear',
           }}
-          className="flex w-fit flex-nowrap gap-10 text-[64px] font-extrabold text-black *:whitespace-nowrap"
+          className="flex w-fit flex-nowrap gap-10 text-[48px] font-extrabold text-black *:whitespace-nowrap lg:text-[64px]"
         >
           <span className="">Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
           <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
@@ -64,7 +64,7 @@ export default function AboutUsSection() {
             repeat: Infinity,
             ease: 'linear',
           }}
-          className="flex w-fit flex-nowrap gap-10 text-[64px] font-extrabold text-black *:whitespace-nowrap"
+          className="flex w-fit flex-nowrap gap-10 text-[48px] font-extrabold text-black *:whitespace-nowrap lg:text-[64px]"
         >
           <span className="">Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
           <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
@@ -72,6 +72,6 @@ export default function AboutUsSection() {
           <span aria-hidden>Welcome to Sourced Tickets. Let&apos;s make your next event unforgettable.</span>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

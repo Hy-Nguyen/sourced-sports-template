@@ -19,14 +19,14 @@ export default function EventItem({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="left-0 top-0 hidden h-full w-full lg:absolute">
+      <div className="left-0 top-0 hidden h-full w-full lg:absolute lg:block">
         <img
           src={img}
           alt={label}
           className="h-full w-full object-cover opacity-0 transition-all duration-300 group-hover:opacity-50 group-hover:blur-sm"
         />
       </div>
-      <div className="-right-10 top-10 hidden aspect-video h-full w-auto rotate-[4deg] overflow-hidden rounded-md border border-white/60 opacity-0 transition-all duration-500 group-hover:right-28 group-hover:opacity-100 lg:absolute">
+      <div className="-right-10 top-10 hidden aspect-video h-full w-auto rotate-[4deg] overflow-hidden rounded-md border border-white/60 opacity-0 transition-all duration-500 group-hover:right-28 group-hover:opacity-100 lg:absolute lg:block">
         <img src={img} alt={label} className="h-full w-full object-cover" />
       </div>
       <article className="z-10 flex w-full flex-col items-start gap-4 lg:w-auto lg:flex-row lg:items-center">

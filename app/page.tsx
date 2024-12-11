@@ -8,13 +8,13 @@ import HeroSection from '@/components/Hero/HeroSection';
 
 export default function Home() {
   return (
-    <div className="flex max-w-[100dvw] flex-col bg-white">
+    <section id="home" className="flex max-w-[100dvw] flex-col bg-white">
       <HeroSection />
       <WhyUsSection />
       <div className="features-clip -mb-[0.7px] h-[100px] bg-main" aria-hidden />
       <EventSection />
       <FeaturesSection />
       <AboutUsSection />
-    </div>
+    </section>
   );
 }

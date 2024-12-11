@@ -25,19 +25,21 @@ export default function Footer() {
   return (
     <footer className="flex w-full flex-col gap-6 bg-main py-12">
       <div className="container flex flex-col items-start justify-center gap-4">
-        <h1 className="text-[40px] font-medium text-white">
+        <h1 className="text-[36px] font-medium text-white lg:text-[40px]">
           Do you have
           <br />
           any questions?
         </h1>
-        <article className="flex w-full flex-row items-center justify-between">
-          <h3 className="text-[16px] font-normal text-[#E6E6E6]">Feel free to send us your questions</h3>
-          <h3 className="flex flex-row items-center justify-center gap-2">
+        <article className="flex w-full flex-col items-start justify-between lg:flex-row lg:items-center">
+          <h3 className="text-[14px] font-normal text-[#E6E6E6] lg:text-base">Feel free to send us your questions</h3>
+          <h3 className="flex flex-row items-center justify-center gap-2 text-[14px] font-normal text-[#E6E6E6] lg:text-base">
             <span className="text-[24px] font-bold text-highlight-2">/</span>
             Thank you for choosing Sourced Tickets
           </h3>
         </article>
-        <button className="w-fit rounded-md bg-highlight-2 px-6 py-2 text-[12px] font-semibold">Join Now</button>
+        <button className="w-full rounded-md bg-highlight-2 px-6 py-2 text-[12px] font-semibold lg:w-fit">
+          Join Now
+        </button>
         <hr className="mt-10 w-full border-t-[1px] border-t-[#E6E6E6]" />
       </div>
 
@@ -73,12 +75,12 @@ export default function Footer() {
       {/* Links and Contact */}
       <div className="container flex flex-col items-start justify-between gap-10">
         {/* Links */}
-        <div className="flex flex-row items-center justify-center gap-2 pt-10">
+        <div className="flex flex-col items-start justify-center gap-2 pt-10 lg:flex-row lg:items-center">
           {footerLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="flex flex-row items-center justify-center gap-2 text-[16px] font-normal text-[#E6E6E6] transition-all duration-300 hover:text-highlight-2"
+              className="flex flex-row items-center justify-center gap-2 text-[14px] font-normal text-[#E6E6E6] transition-all duration-300 hover:text-highlight-2 lg:text-[16px]"
             >
               {link.name} {link.popular && <Fire />}
             </a>
@@ -86,24 +88,7 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div className="flex w-full flex-row items-center justify-between">
-          <div className="flex flex-row items-start justify-center gap-16">
-            <article className="flex flex-col items-start justify-center gap-2">
-              <h3 className="text-[10px] font-medium text-white/50">Contact Us</h3>
-              <h2 className="text-[14px] font-normal text-[#E6E6E6]">+123 456 7890</h2>
-            </article>
-            <article className="flex flex-col items-start justify-center gap-2">
-              <h3 className="text-[10px] font-medium text-white/50">Open Hours</h3>
-              <h2 className="text-[14px] font-normal text-[#E6E6E6]">24/7</h2>
-            </article>
-            <article className="flex flex-col items-start justify-center gap-2">
-              <h3 className="text-[10px] font-medium text-white/50">Email</h3>
-              <a href="mailto:info@sourcedtickets.com" className="text-[14px] font-normal text-[#E6E6E6]">
-                info@sourcedtickets.com
-              </a>
-            </article>
-          </div>
-
+        <div className="flex w-full flex-row items-center justify-end">
           {/* Copyright */}
           <article className="flex flex-col items-end justify-end gap-2">
             <h3 className="text-right text-[10px] font-medium text-white/50">SOURCED TICKETS</h3>
