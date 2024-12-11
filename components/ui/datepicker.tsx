@@ -19,7 +19,7 @@ export function DatePickerDemo() {
           variant={'outline'}
           id="date-picker"
           className={cn(
-            'w-fit justify-start text-left font-normal border-none bg-[#D9D9D9] text-black',
+            'w-fit justify-start text-left font-normal border-none bg-[#F6F6F6] text-black',
             !date && 'text-muted-foreground'
           )}
         >

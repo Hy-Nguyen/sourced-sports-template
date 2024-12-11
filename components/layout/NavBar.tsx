@@ -37,7 +37,9 @@ export default function NavBar() {
     <nav className="fixed left-0 top-0 z-50 w-screen max-w-[100dvw] overflow-x-clip border-white/30 bg-main text-[12px] font-semibold text-white lg:border-b lg:pb-4">
       {/* nav container */}
       <div className="flex items-center justify-between px-4 lg:container">
-        <SourcedLogo />
+        <a href="/">
+          <SourcedLogo />
+        </a>
         {/* Nav Links */}
         <div className="relative hidden flex-row gap-6 lg:flex">
           {NavLinks.map((link) => (
